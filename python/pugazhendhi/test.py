@@ -27,6 +27,9 @@
 # finally:
 
 
+# export PATH=$PATH:/Users/pugazh/Library/Python/3.9/bin
+
+
 
 
 
