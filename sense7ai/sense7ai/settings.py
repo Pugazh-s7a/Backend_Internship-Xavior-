@@ -9,11 +9,13 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+global BASE_DIR,matching_api_url,matching_auth_token,matching_keyword_filter
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 
 # Quick-start development settings - unsuitable for production
