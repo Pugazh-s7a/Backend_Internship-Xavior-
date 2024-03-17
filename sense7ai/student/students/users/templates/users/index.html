@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index pg</title>
+</head>
+<body>
+<h1>Hello World This is Rahima!!;)<br>users app is running:)</h1>
+<br><br>
+<h2>User Registration table</h2>
+
+<table>
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+    </tr>
+    {% for us in users_data %}
+    <tr>
+        <td>{{ us.urollno }}</td>
+        <td>{{ us.uname }}</td>
+        <td>{{ us.uemail }}</td>
+        <td>{{ us.ucontact }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br><br>
+<h2>Mark table</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Subject1</th>
+        <th>Score</th>
+        <th>users_uid_id</th>
+    </tr>
+    {% for us in mark_data %}
+    <tr>
+        <td>{{ us.id }}</td>
+        <td>{{ us.subject1 }}</td>
+        <td>{{ us.score }}</td>
+        <td>{{ us.users_uid }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
