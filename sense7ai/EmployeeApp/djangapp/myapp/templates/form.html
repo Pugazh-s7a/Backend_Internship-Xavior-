@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Details</h2>
+        <form name="register" method="post" action="{% url 'update' %}">
+            {% csrf_token %}
+            Employee ID:
+            <input type="text" name="tid" value="">
+            Employee Name:
+            <input type="text" name="tname" value="">
+            Employee Email:
+            <input type="text" name="tmail" value="">
+            Employee Contact:
+            <input type="text" name="tcont" value="">
+            Department Id:
+            <input type="text" name="department_id" value="">
+           
+            <input type="submit" name="reg" value="click">
+            
+
+        </form>
+        <a href="index">showdata</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<h1>The Data about Employees</h1>
+<table border="2">
+    <tr><td>Employee id</td><td>Employee name</td><td>Employee mail address</td><td>Employee contact</td></tr>
+    {% for x in emplist %}
+    <tr><td>{{x.eid}}</td><td>{{x.ename}}</td><td>{{x.email}}</td><td>{{x.econtact}}</td></tr>
+    {% endfor %}
+
+</table>

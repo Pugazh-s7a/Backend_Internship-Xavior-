@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        {% load static %}
+        <script src="{% static '/script.js' %}" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Details of the Student</h1>
+        <img src="{% static '/OIP.jpg' %}" alt="My image" height="300px" width="700px"/>
+    <ul>
+        {% for x in stulist %}
+            <li>name of the student: {{x.firstname}}   email:  {{x.email}}</li>
+        {% endfor %}
+        
+    </ul>
+    </body>    
+</html>
