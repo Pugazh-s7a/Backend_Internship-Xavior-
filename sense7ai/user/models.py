@@ -8,5 +8,10 @@ class User(models.Model):
     is_active = models.BooleanField(default=1)
     created_on = models.DateTimeField(auto_now_add=True)
 
+class additional_user(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    is_active = models.BooleanField(default=1)
+    role = models.CharField(max_length=100)
+
 
 
